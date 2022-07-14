@@ -1,0 +1,347 @@
+<html>
+    <head>
+        <title>WEBSITE</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="project.css">
+        <link rel="icon" href="logo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <style>
+
+        body{
+            background-image: url('b.png');
+            background-repeat: no-repeat;
+            width:100%;
+            background-size: 1800px;
+        }
+        div{
+            background-image: url('form.png');
+            float:center;
+            width: 40%;
+            
+        }
+        label{
+            font-style:italic;
+        }
+
+       </style>
+    </head>
+    <body>
+        <div id="a">
+            <ul id="c">
+                <li style="margin-left:0px;"><a href="#" title="Vanaja venkata prasanna"><img src="eswara.jpg" height="90px" width="90px" ></a></li>
+                   
+                <li style="float:right;  margin-right:40px; font-size: 30px;margin-top:40px;"><b style="margin-right:500px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: orange; font-size:20px;">Computer Science Engineering</b></i></li>
+            </ul>
+        </div>
+        <hr>
+        <div id="an">
+           <ul>
+            <li><a href="#" id="home"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+            <li><a href="#" id="exam"><i class="fa fa-hourglass" aria-hidden="true"></i>EXAM</a>
+               <div id="sub1">
+                <ul>
+                  <li><a href="frame.html" target="self" >LOGIN</a></li>
+                  <li><a href="frame.html" >SIGN UP</a></li>
+                  </ul>  
+              </div>
+             
+            </li>
+            <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i>BRANCH</a>
+                <div  id="sub-menu1">
+                    <ul>
+                        <li class="hover-me"><a href="#" >CSE</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <div class="sub-menu2">
+                                <ul>
+                                  <li><a href="#" onclick="data();">Faculty</a>
+                                  
+                                  </li>
+                                  <li><a href="#" onclick="data();">Student</a></li>
+                                </ul>
+                              </div></li>
+                        <li><a href="#">ECE</a></li>
+                        <li><a href="#">MECH</a></li>
+                    </ul>
+                </div>
+             </li>
+            <li><a href="call.html" id="phone"><i class="fa fa-phone"></i>CONTACT</a>
+               
+            </li>
+           </ul>
+          </div>
+           <script>
+              function data(){
+                var id=prompt("ENTER YOUR ID:");
+                
+                alert("YOUR ID IS"+id);
+                
+              }
+           </script>
+           <div  style="width:425px; height:400px; border:3px solid black; float:left;">
+            <center><h1><u>LOGIN PAGE</u></h1></center>
+         <form>
+         
+         <center><b><label for="n">USERNAME:</label><input type="text" name="n"></b>
+        </center><br><br>
+         <center><b><label for="p">PASSWORD:</label><input type="password" name="p">
+        </b></center><br>
+         <center><input type="button" value="LOGIN"</center><br><br>
+         If you are not registered then<a title="click here to move sign up page" href="sign 
+        up.html">click here</a>
+        </form>
+        
+        </div>
+        
+        <div style="float:right; border:3px solid black; width:450px; padding-right:450px;">
+            
+                <h1 style="color: black;"><i>REGISTRATION FORM</i></h1>
+                <div id="d">
+                    <form action="/jk.php" method="post" onsubmit="return validate();">
+                        <table >
+                            <tr>
+                                <td><label for="fname">First Name:</label></td>
+                                <td><input  name="" id="fname" type="text" required></td>
+                                <td><label id="i1" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mname">Middle Name:</label></td>
+                                <td><input type="text" name=""  id="mname" ></td>
+                                <td><label id="i2" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lname">Last Name:</label></td>
+                                <td><input  name="" id="lname" type="text" required></td>
+                                <td><label id="i3" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Fname">Full Name</label></td>
+                                <td><input type="text" name="" id="Fname" onmouseover="fulname();"></td>
+                                <td><label id="i4" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="country">Choose Country:</label></td>
+                                <td><select name="" id="country">
+                                    <option id="ind" value="ind">INDIA</option>
+                                    <option id="usa" value="usa">USA</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="phNo">Phone Number:</label></td>
+                                <td><input  name="" id="phNo" type="text" required></td>
+                                <td><label id="i5" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="psw">Password</label></td>
+                                <td><input type="password" name="" id="psw"  required></td>
+                                <td><label id="i6" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="sp"> show password</label></td>
+                                <td><input type="checkbox" name="" id="sp" onclick="show();"></td>
+                            </tr>
+                            <tr>
+                                <td ><label for="hobbies">select any two hobbies:</label></td>
+                                    <td><input type="checkbox" name="" id="hobbies"><label for="hobby1">Drawing</label></td>
+                            </tr>
+                    
+                            <tr>
+                                <td rowspan="4"> </td>
+                                <td>
+                                    <input type="checkbox" name="hobby" id="hobbies"><label for="hobby2">Sports</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="hobby" id="hobbies"><label for="hobby3">Singing</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="hobby" id="hobbies"><label for="hobby4">Reading</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="hobby" id="hobbies"><label for="hobby5">Video Games</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:white">add your hobbies:</td><td><a href="dom ex.html">click here</a></td>
+                            </tr>
+                            <tr>
+                                <td><label for="image">Insert an Image:</label></td>
+                                <td><input type="file" name="" id="image" accept="image/jpg/png"></td>
+                                <td><label id="i7" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">E-Mail Address:</label></td>
+                                <td><input  name="" id="email" type="text" required></td>
+                                <td><label id="i8" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                          
+                            <tr>
+                                <td><p id="birth"><b>age:</b></p> <input type="date" name="date" name="trip-start"  id="date" onChange="calculate_age()" required> <p class="age"><b>Age</b></p><input type="text"   id="age"  value="0" > <br> <br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="address">Addresss:</label></td>
+                                <td><textarea rows="3" cols="" name="" id="address"></textarea></td>
+                                <td><label id="i9" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id="agree"><label for="agree" >I agrre to the tems of the company</label></td>
+                                <td><label id="i10" style="color:red ;visibility:hidden;"><b>*you have to agree to the terms of the company</b></label></td>
+                            
+                            </tr>
+                            <tr>
+                                <td><input type="reset" value="RESET"></td>
+                                <td><input type="submit" value="SUBMIT"></td>
+                            </tr>
+                        </table>
+                    </form>
+                
+                </div>
+            </div>
+            <script>
+                function show(){
+                    var cb=document.getElementById("sp");
+                    var psw=document.getElementById("psw");
+                    if(cb.checked==true){
+                        psw.type="text";
+                    }
+                    else{
+                        psw.type="password"
+                    }
+                }
+        
+            </script>
+            <script>
+                function fulname(){
+                    let fn=document.getElementById("fname").value;
+                    let mn=document.getElementById("mname").value;
+                    let ln=document.getElementById("lname").value;
+                    let Fn=fn+mn+ln;
+                    Fname=document.getElementById("Fname").value=Fn;
+                }
+            </script>
+            <script type="text/javascript">
+                function validate(){
+                    var fn=document.getElementById("fname").value;
+                    var patfn=/^[a-z|A-Z]*$/;
+                    if(fn.length<4 ){
+                        document.getElementById("fname").style.border="4px Solid red";
+                        document.getElementById("i1").style.visibility="visible";
+                        return false;
+                    }
+                    if(!patfn.test(fn)){
+                        document.getElementById("fname").style.border="4px Solid red";
+                        document.getElementById("i1").style.visibility="visible";
+                        return false;
+                    
+                    }
+                    var ln=document.getElementById("lname").value;
+                    var patln=/^[a-z|A-Z]*$/;
+                    if(ln.length<4){
+                        document.getElementById("lname").style.border="4px Solid red";
+                        document.getElementById("i3").style.visibility="visible";
+                        return false;
+                    }
+                    if(!patln.test(ln)){
+                        document.getElementById("lname").style.border="4px Solid red";
+                        document.getElementById("i3").style.visibility="visible";
+                        return false;
+                    }
+                    var select=document.getElementById("country");
+                    var option=select.options[select.selectedIndex];
+                    var phno=document.getElementById("phNo").value;
+                    var indno=/^[6-9]{1}[0-9]{9}$/;
+                    if(option.text=="INDIA" && !indno.test(phno)){
+                        document.getElementById("phNo").style.border="4px Solid red";
+                        document.getElementById("i5").style.visibility="visible";
+                        return false;
+                    }
+                    var usano=/^[6-9]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}$/;
+                    if(option.text=="USA" && !usano.test(phno)){
+                        document.getElementById("phNo").style.border="4px Solid red";
+                        document.getElementById("i5").style.visibility="visible";
+                        return false;
+                    }
+                    // var cb=document.getElementById("sp");
+                    // var psw=document.getElementById("psw");
+                    // if(cb.checked==true){
+                    //     psw.type="text";
+                    // }
+                    // if(psw.length<8)
+        
+                    var psw=document.getElementById("psw").value;
+                    if(psw.length<8){
+                        document.getElementById("psw").style.border="4px Solid red";
+                        document.getElementById("i6").style.visibility="visible";
+                        return false;
+                    }
+                    // var sp=document.getElementById("sp").checked;
+                    // if(sp){
+                    //     document.getElementById("psw").type="text";
+                    // }
+                    // if(!sp){
+                    //     document.getElementById("pswd").type="password";
+                    // }
+                    
+        
+        
+                    var mail=document.getElementById("email").value;
+                    var pmail=/^[a-z,0-9]*\.?([a-z,0-9]*)@[a-z]{2,7}((\.)?([a-z]{2}))?\.[a-z]{2,3}$/;
+                    if(!pmail.test(mail)){
+                        document.getElementById("email").style.border="4px Solid red";
+                        document.getElementById("i8").style.visibility="visible";
+                        return false;
+                    }
+                    var agre=document.getElementById("agree").checked ;
+                    if(!agre){
+                        document.getElementById("i10").style.visibility="visible";
+                        return false;
+                    }
+        
+                }
+                
+            </script>
+             <script>
+                function calculate_age() { 
+                  var userinput = document.getElementById("date").value;  
+                    var dob = new Date(userinput);  
+                 var month_diff = Date.now() - dob.getTime();  
+                      
+                    //convert the calculated difference in date format  
+                    var age_dt = new Date(month_diff);   
+                      
+                    //extract year from date      
+                    var year = age_dt.getUTCFullYear();  
+                      
+                    //now calculate the age of the user  
+                    var age = Math.abs(year - 1970);  
+                      
+                      document.getElementById("age").value= age;
+                }
+                
+                function getDate(){
+                    var date = new Date();
+                var currentDate = date.toISOString().slice(0,10);
+                document.getElementById("date").value= currentDate;
+                }</script>
+        
+        </div>
+           <div class="arrow">
+            <a href="#top"><img src="up.png" height="60px" width="60px" class="scroll-image"></a>
+          
+           </div>
+           <footer id="main-footer">
+            <p align="center">copy right &copy;N181131 VANAJA</p> 
+            <div class="foot">
+              viewcount:
+          <!-- hitwebcounter Code START -->
+          <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=8013545&style=0005&nbdigits=6&type=page&initCount=100000" title="Free Counter" Alt="web counter"   border="0" /></a>                                    
+                                                    
+          </div> 
+          
+          </footer>
+  </body>
+  </html>

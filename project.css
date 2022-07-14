@@ -1,0 +1,486 @@
+/*vertical navigation bar*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+#menu{
+    position: fixed;
+    right: 50px;
+    top:10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+#sidenav{
+    padding: 100px 0px;
+    position: fixed;
+    width: 0px;
+    height: 100vh;
+    background:rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    box-shadow:insert 10px 10px 10px grey;;
+    top:0;
+    right: 0;
+}
+#sidenav ul li{
+    list-style: none;
+}
+#sidenav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 10px 30px;
+    display: block;
+    padding: 10px;
+}
+#sidenav ul li a:hover{
+    background: rgba(225, 255, 255, 0.4);
+    transition: 0.4s;
+}
+#vertical-exams{
+  display:none;
+ }
+ #sidenav ul li:hover #vertical-exams{
+   display:block;
+
+background:rgb(255,255,200);
+z-index: 1;
+
+}
+     
+#sidenav ul li:hover #vertical-exams ul{
+  display:block;
+  margin:10px;
+}
+#sidenav ul li:hover #vertical-exams ul li{
+  
+  border-bottom:1px dotted #fff;
+  background:transparent;
+  border-radius: 0;
+  text-align: left;
+
+
+} 
+.veritcal-nav{
+  
+    background:#2bab0d;
+    
+    width:100%;
+    text-align:center;
+}
+.veritcal-nav{
+  display:none;
+}
+#sidenav ul li:hover .veritcal-nav{
+  display:block;
+ 
+  background: rgb(255,255,200);
+}
+#sidenav ul li:hover .veritcal-nav ul{
+  display:block;
+  margin:10px;
+}
+#sidenav ul li:hover .veritcal-nav ul li{
+  background:transparent;
+  border-radius: 0;
+  text-align: left;
+
+
+}
+#sidenav ul li:hover  .veritcal-nav ul li:last-child{
+  border-bottom:none;
+}
+#sidenav ul li:hover  .veritcal-nav ul li a:hover{
+  color:white;
+}
+.fa-angle-right{
+  float:right;
+
+}
+.veritcal-navi{
+  display:none;
+}
+.hover-mee:hover .veritcal-navi{
+  
+  display: block;
+  margin-top: -30px;
+  margin-right: 200px;
+
+}
+#vertical-call{
+  display:none;
+ }
+ #sidenav ul li:hover #vertical-call{
+   display:block;
+   position: absolute;
+   background-color: rgb(255,255,200);
+  
+  
+
+} 
+#sidenav ul li:hover #vertical-call ul{
+display:block;
+margin:10px;
+}
+#sidenav ul li:hover #vertical-call ul li{
+width:150px;
+padding:10px;
+border-bottom:1px dotted #fff;
+background:transparent;
+border-radius: 0;
+text-align: left;
+
+
+}
+
+#c li{
+display: inline;
+}
+
+#a{
+    background-image: url('b.png');
+    height: 15%;
+    width:100%;
+}
+
+#a ul{
+    list-style-type: none;
+}
+
+nav{
+    height: 80px;
+    background: #2c3e50;
+}
+nav ul li a{
+    color: white;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 100px;
+}
+
+
+img{
+width:95px;
+height: 95px;
+
+}
+nav ul li a{
+text-decoration: none;
+}
+/*horizantal nav bar*/
+/*EXAM*/
+#sub1{
+  display:none;
+ }
+ #an ul li:hover #sub1{
+   display:block;
+position: absolute;
+background:rgb(255,255,200);
+z-index: 1;
+
+}
+     
+#an ul li:hover #sub1 ul{
+  display:block;
+  margin:10px;
+}
+#an ul li:hover #sub1 ul li{
+  width:150px;
+  padding:10px;
+  border-bottom:1px dotted #fff;
+  background:transparent;
+  border-radius: 0;
+  text-align: left;
+
+
+} 
+/* BRANCHES*/
+#an{
+    background-image: linear-gradient(red,pink,yellow);
+    height: 15%;
+    width:100%;
+    text-align:center;
+}
+#an ul{
+  display:inline-flex;
+  list-style: none;
+  color: white;
+}
+#an ul li{
+  width:120px;
+  margin:15px;
+  padding:15px
+}
+#an ul li a{
+  text-decoration: none;
+  color:purple;
+}
+#an ul li:hover{
+   background-color:#2bab0d ;
+   border-radius:3px;
+
+
+}
+#sub-menu1{
+  display:none;
+  z-index:1;
+}
+#an ul li:hover #sub-menu1{
+  display:block;
+  position: absolute;
+  background:rgb(255,255,200);
+  margin-top: 15px;
+  margin-left: -15px;
+
+}
+#an ul li:hover #sub-menu1 ul{
+  display:block;
+  margin:10px;
+}
+#an ul li:hover #sub-menu1 ul li{
+  width:150px;
+  padding:10px;
+  border-bottom:1px dotted #fff;
+  background:transparent;
+  border-radius: 0;
+  text-align: left;
+
+
+}
+#an ul li:hover #sub-menu1 ul li:last-child{
+  border-bottom:none;
+}
+#an ul li:hover #sub-menu1 ul li a:hover{
+  color:red;
+}
+.fa-angle-right{
+  float:right;
+
+}
+.sub-menu2{
+  display:none;
+}
+.hover-me:hover .sub-menu2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background:rgb(255,255,200);
+}
+
+/*call*/
+#subs2{
+  display:none;
+ }
+ #an ul li:hover #subs2{
+   display:block;
+   position: absolute;
+   background-color: rgb(255,255,200);
+  
+  
+
+} 
+#an ul li:hover #subs2 ul{
+display:block;
+margin:10px;
+}
+#an ul li:hover #subs2 ul li{
+width:150px;
+padding:10px;
+border-bottom:1px dotted #fff;
+background:transparent;
+border-radius: 0;
+text-align: left;
+
+
+}
+/*home*/
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  #myInput {
+    background-image:url('sea.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid blueviolet;
+    margin-bottom: 12px;
+    margin-left: 150px;
+    background-size:25px;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+  
+  
+    background-color: #f6f6f6;
+   padding-left:200px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+  /*....................*/
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slideshow-container{
+    display:flex;
+    flex-direction: column reverse;
+  }
+  .content{
+    overflow:auto;
+    width:100%;
+    height:100%;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+  
+#main-footer{
+    background-color:purple;
+    color:#FFFFFF;
+    width:94%;
+    height:90px;
+    text-align: center;
+   
+    position:fixed;
+    
+    bottom: 0px;
+    left:0px;
+  
+  
+  }
+  #main-footer p{
+    margin-bottom:0px;
+    padding:10px;
+    font-size:20px;
+    
+  }
+  
+  div.foot{
+    float:right;
+    margin-right: 15px;
+    margin-top: 10px;
+    display:inline;
+    
+  }
+  img{
+    background-position: center;
+  }
+  .scroll-image{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+  
+  }
